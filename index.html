@@ -1,0 +1,498 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <title>История о том, как сделать это за пару дней</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="header blue">
+      <nav>
+        <ul class="menu">
+          <li><a href=".home" class="menu__item">HOME</a></li>
+          <li><a href=".about" class="menu__item">ABOUT</a></li>
+          <li><a href=".services" class="menu__item">SERVICES</a></li>
+          <li><a href=".contacts" class="menu__item">CONTACTS</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="left-bar blue">
+        <a class="logo" href="#"></a>
+        <a class="burger" href="#"></a>
+        <nav class="burger-menu">
+          <ul>
+            <li><a href=".home" class="burger-menu__item">HOME</a></li>
+            <li><a href=".about" class="burger-menu__item">ABOUT</a></li>
+            <li><a href=".services" class="burger-menu__item">SERVICES</a></li>
+            <li><a href=".contacts" class="burger-menu__item">CONTACTS</a></li>
+          </ul>
+          <button class="burger-menu__close-button"><img src="./img/burger-cross.png" alt="Close"></button>
+        </nav>
+        <ul class="socials">
+          <li><a class="social__icon social__icon--whatsapp" href="https://whatsapp.com"></a></li>
+          <li><a class="social__icon social__icon--twitter" href="https://twitter.com"></a></li>
+          <li><a class="social__icon social__icon--facebookMessenger" href="https://facebook.com"></a></li>
+        </ul>
+        <a href="#" class="calendar"></a>
+      </div>
+      <section class="section home">
+        <h1 class="hidden">beauty</h1>
+        <h2 class="hidden">Home</h2>
+        <div class="screen blue">
+          <div class="slider-block">
+            <button class="slider-block__button slider-block__button--left"></button>
+            <button class="slider-block__button slider-block__button--right"></button>
+          </div>
+          <img class="beauty" src="./img/beauty-blue.png" alt="beauty">
+          <div class="img-wrapper active" data-color='blue'>
+            <img class="screen1__bg--shadow" src="./img/bg1-shadow.png" alt="shadow">
+            <img class="screen1__bg" src="./img/bg1.png" alt="Woman">
+          </div>
+          <div class="img-wrapper" data-color='pink'>
+            <img class="screen1__bg" src="./img/bg2.png" alt="Woman">
+          </div>
+        </div>
+      </section>
+      <section class="section about">
+        <img class="about__img" src="./img/bg3.png" alt="mirrorWoman">
+        <div class="about__text">
+          <h1 class="about__title">We make <span class="about__title blue">beauty</span>, and&nbsp;someone&nbsp;considers it art</h1>
+          <p class="about__descr">Having started my career, I could not think of&nbsp;reaching&nbsp;such&nbsp;heights. It’s already difficult to call us a&nbsp;beauty&nbsp;salon. From now on, we&nbsp;are&nbsp;a beauty house, where the&nbsp;family is not only our masters, 
+          but&nbsp;also&nbsp;our&nbsp;customers.</p>
+          <button class="about__button blue">READ MORE</button>
+        </div>
+      </section>
+      <section class="section services">
+        <div class="services__date-picker date-picker">
+          <div class="date-picker__title blue">
+            <span class="date-picker__date">02</span>
+            <span class="date-picker__month">October 2019</span>
+            <button class="date-picker__arrow date-picker__arrow---prev"></button>
+            <button class="date-picker__arrow date-picker__arrow---next"></button>
+          </div>
+          <table class="date-picker__table">
+            <tr>
+              <th>Mon</th>
+              <th>Tue</th>
+              <th>Wed</th>
+              <th>Thu</th>
+              <th>Fri</th>
+              <th>Sat</th>
+              <th>Sun</th>
+            </tr>
+            <tr>
+              <th></th>
+              <th>1</th>
+              <th class="date-picker__current-date blue">2</th>
+              <th>3</th>
+              <th>4</th>
+              <th>5</th>
+              <th>6</th>
+            </tr>
+            <tr>
+              <th>7</th>
+              <th>8</th>
+              <th>9</th>
+              <th>10</th>
+              <th>11</th>
+              <th>12</th>
+              <th>13</th>
+            </tr>
+            <tr>
+              <th>14</th>
+              <th>15</th>
+              <th>16</th>
+              <th>17</th>
+              <th class="date-picker__selected-date">18</th>
+              <th>19</th>
+              <th>20</th>
+            </tr>
+            <tr>
+              <th>21</th>
+              <th>22</th>
+              <th>23</th>
+              <th>24</th>
+              <th>25</th>
+              <th>26</th>
+              <th>27</th>
+            </tr>
+            <tr>
+              <th>28</th>
+              <th>29</th>
+              <th>30</th>
+              <th>31</th>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+          </table>
+        </div>
+        <div class="services__order order">
+          <div class="order__master-selection">
+            <button class="order__master-card order__master-card--active blue" data-masterID="1">
+              <img src="./img/master1.png" alt ='master'>
+              <span>MASTER</span>
+            </button>
+            <button class="order__master-card blue" data-masterID="2">
+              <img src="./img/master2.png" alt ='Stylist'>
+              <span>stylist</span>
+            </button>
+            <button class="order__master-card blue" data-masterID="3">
+              <img src="./img/master3.png" alt ='Top stylist'>
+              <span>Top stylist</span>
+            </button>
+            <button class="order__master-card order__master-card--disabled blue" data-masterID="4">
+              <img src="./img/master4.png" alt ='expert'>
+              <span>expert</span>
+            </button>
+            <button class="order__master-card order__master-card--5  blue" data-masterID="5">
+              <img src="./img/master5.png" alt ='top expert'>
+              <span>top expert</span>
+            </button>
+          </div>
+          <div class="order__masters-descr order__masters-descr--visible" data-masterID="1">
+            <h2>18 October 2019 :</h2>
+            <ul class="order__timetable">
+              <li class="order__time-item order__time-item--free blue">
+                09:00
+                <a class="order__time-status" href="#">FREE</a>
+              </li>
+              <li class="order__time-item">
+                11:00
+                <a class="order__time-status order__time-status--reserved" href="#">RESERVED</a>
+              </li>
+              <li class="order__time-item">
+                13:00
+                <a class="order__time-status order__time-status--reserved" href="#">RESERVED</a>
+              </li>
+              <li class="order__time-item  order__time-item--free blue">
+                15:00
+                <a class="order__time-status" href="#">FREE</a>
+              </li>
+              <li class="order__time-item">
+                17:00
+                <a class="order__time-status order__time-status--reserved" href="#">RESERVED</a>
+              </li>
+            </ul>
+            <ul class="order__pricelist">
+              <li class="order__pricelist-item">
+                <div class="order__pricelist-title blue">haircut</div>
+                <div class="order__pricelist-price">18 USD</div>
+              </li>
+              <li class="order__pricelist-item">
+                <div class="order__pricelist-title blue">coloring</div>
+                <div class="order__pricelist-price">38 USD</div>
+              </li>
+              <li class="order__pricelist-item">
+                <div class="order__pricelist-title blue">Styling</div>
+                <div class="order__pricelist-price">16 USD</div>
+              </li>
+              <li class="order__pricelist-item">
+                <div class="order__pricelist-title blue">hair restoration</div>
+                <div class="order__pricelist-price">35 USD</div>
+              </li>
+            </ul>
+            <div class="order__review">
+              <div class="order__reviewer-name">
+                Anna Mane
+              </div>
+              <div class="order__review-text">
+                I want to say thank you very much for the professionalism and&nbsp;comfort that reigns in your salon. Any master of your salon has&nbsp;vast experience behind him.
+              </div>
+            </div>
+          </div>
+          <div class="order__masters-descr" data-masterID="2">
+            <h2>18 October 2019 :</h2>
+            <ul class="order__timetable">
+              <li class="order__time-item blue">
+                09:00
+                <a class="order__time-status order__time-status--reserved" href="#">RESERVED</a>
+              </li>
+              <li class="order__time-item blue">
+                11:00
+                <a class="order__time-status order__time-status--reserved" href="#">RESERVED</a>
+              </li>
+              <li class="order__time-item blue">
+                13:00
+                <a class="order__time-status order__time-status--reserved" href="#">RESERVED</a>
+              </li>
+              <li class="order__time-item order__time-item--free blue">
+                15:00
+                <a class="order__time-status" href="#">FREE</a>
+              </li>
+              <li class="order__time-item order__time-item--free blue">
+                17:00
+                <a class="order__time-status order__time-item--free" href="#">FREE</a>
+              </li>
+            </ul>
+            <ul class="order__pricelist">
+              <li class="order__pricelist-item">
+                <div class="order__pricelist-title blue">haircut</div>
+                <div class="order__pricelist-price">20 USD</div>
+              </li>
+              <li class="order__pricelist-item">
+                <div class="order__pricelist-title blue">coloring</div>
+                <div class="order__pricelist-price">42 USD</div>
+              </li>
+              <li class="order__pricelist-item">
+                <div class="order__pricelist-title blue">Styling</div>
+                <div class="order__pricelist-price">18 USD</div>
+              </li>
+              <li class="order__pricelist-item">
+                <div class="order__pricelist-title blue">hair restoration</div>
+                <div class="order__pricelist-price">40 USD</div>
+              </li>
+            </ul>
+            <div class="order__review">
+              <div class="order__reviewer-name">
+                Jason Statham
+              </div>
+              <div class="order__review-text">
+                When I'm getting ready for a movie, let's just say my diet is 'The Antisocial Diet.' I don't go to restaurants. I don't eat what I really want to eat. I don't eat much. I eat small things frequently. Lots of protein and greens. And I don't eat with people, because there's a tendency to get social and then to overeat.
+              </div>
+            </div>
+          </div>
+          <div class="order__masters-descr" data-masterID="3">
+            <h2>18 October 2019 :</h2>
+            <ul class="order__timetable">
+              <li class="order__time-item order__time-item--free blue">
+                09:00
+                <a class="order__time-status" href="#">FREE</a>
+              </li>
+              <li class="order__time-item order__time-item--free blue">
+                11:00
+                <a class="order__time-status" href="#">FREE</a>
+              </li>
+              <li class="order__time-item order__time-item--free blue">
+                13:00
+                <a class="order__time-status" href="#">FREE</a>
+              </li>
+              <li class="order__time-item  order__time-item--free blue">
+                15:00
+                <a class="order__time-status" href="#">FREE</a>
+              </li>
+              <li class="order__time-item order__time-item--free blue">
+                17:00
+                <a class="order__time-status" href="#">FREE</a>
+              </li>
+            </ul>
+            <ul class="order__pricelist">
+              <li class="order__pricelist-item">
+                <div class="order__pricelist-title blue">haircut</div>
+                <div class="order__pricelist-price">28 USD</div>
+              </li>
+              <li class="order__pricelist-item">
+                <div class="order__pricelist-title blue">coloring</div>
+                <div class="order__pricelist-price">45 USD</div>
+              </li>
+              <li class="order__pricelist-item">
+                <div class="order__pricelist-title blue">Styling</div>
+                <div class="order__pricelist-price">22 USD</div>
+              </li>
+              <li class="order__pricelist-item">
+                <div class="order__pricelist-title blue">hair restoration</div>
+                <div class="order__pricelist-price">48 USD</div>
+              </li>
+            </ul>
+            <div class="order__review">
+              <div class="order__reviewer-name">
+                Rocky
+              </div>
+              <div class="order__review-text">
+                Let me tell you something you already know. The world ain’t all sunshine and rainbows. It’s a very mean and nasty place and I don’t care how tough you are it will beat you to your knees and keep you there permanently if you let it. You, me, or nobody is gonna hit as hard as life. But it ain’t about how hard ya hit. It’s about how hard you can get hit and keep moving forward. How much you can take and keep moving forward. That’s how winning is done!
+              </div>
+            </div>
+          </div>
+          <div class="order__masters-descr" data-masterID="4">
+            <h2>18 October 2019 :</h2>
+            <ul class="order__timetable">
+              <li class="order__time-item order__time-item--free blue">
+                09:00
+                <a class="order__time-status" href="#">FREE</a>
+              </li>
+              <li class="order__time-item">
+                11:00
+                <a class="order__time-status order__time-status--reserved" href="#">RESERVED</a>
+              </li>
+              <li class="order__time-item">
+                13:00
+                <a class="order__time-status order__time-status--reserved" href="#">RESERVED</a>
+              </li>
+              <li class="order__time-item  order__time-item--free blue">
+                15:00
+                <a class="order__time-status" href="#">FREE</a>
+              </li>
+              <li class="order__time-item">
+                17:00
+                <a class="order__time-status order__time-status--reserved" href="#">RESERVED</a>
+              </li>
+            </ul>
+            <ul class="order__pricelist">
+              <li class="order__pricelist-item">
+                <div class="order__pricelist-title blue">haircut</div>
+                <div class="order__pricelist-price">18 USD</div>
+              </li>
+              <li class="order__pricelist-item">
+                <div class="order__pricelist-title blue">coloring</div>
+                <div class="order__pricelist-price">38 USD</div>
+              </li>
+              <li class="order__pricelist-item">
+                <div class="order__pricelist-title blue">Styling</div>
+                <div class="order__pricelist-price">16 USD</div>
+              </li>
+              <li class="order__pricelist-item">
+                <div class="order__pricelist-title blue">hair restoration</div>
+                <div class="order__pricelist-price">35 USD</div>
+              </li>
+            </ul>
+            <div class="order__review">
+              <div class="order__reviewer-name">
+                Anna Mane
+              </div>
+              <div class="order__review-text">
+                I want to say thank you very much for the professionalism and&nbsp;comfort that reigns in your salon. Any master of your salon has&nbsp;vast experience behind him.
+              </div>
+            </div>
+          </div>
+          <div class="order__masters-descr" data-masterID="5">
+            <h2>18 October 2019 :</h2>
+            <ul class="order__timetable">
+              <li class="order__time-item blue">
+                09:00
+                <a class="order__time-status order__time-status--reserved" href="#">RESERVED</a>
+              </li>
+              <li class="order__time-item">
+                11:00
+                <a class="order__time-status order__time-status--reserved" href="#">RESERVED</a>
+              </li>
+              <li class="order__time-item">
+                13:00
+                <a class="order__time-status order__time-status--reserved" href="#">RESERVED</a>
+              </li>
+              <li class="order__time-item blue">
+                15:00
+                <a class="order__time-status order__time-status--reserved" href="#">RESERVED</a>
+              </li>
+              <li class="order__time-item">
+                17:00
+                <a class="order__time-status order__time-status--reserved" href="#">RESERVED</a>
+              </li>
+            </ul>
+            <ul class="order__pricelist">
+              <li class="order__pricelist-item">
+                <div class="order__pricelist-title blue">haircut</div>
+                <div class="order__pricelist-price">40 USD</div>
+              </li>
+              <li class="order__pricelist-item">
+                <div class="order__pricelist-title blue">coloring</div>
+                <div class="order__pricelist-price">120 USD</div>
+              </li>
+              <li class="order__pricelist-item">
+                <div class="order__pricelist-title blue">Styling</div>
+                <div class="order__pricelist-price">35 USD</div>
+              </li>
+              <li class="order__pricelist-item">
+                <div class="order__pricelist-title blue">hair restoration</div>
+                <div class="order__pricelist-price">80 USD</div>
+              </li>
+            </ul>
+            <div class="order__review">
+              <div class="order__reviewer-name">
+                Charles Buxton
+              </div>
+              <div class="order__review-text">
+                You will never find time for anything. If you want time you must make it.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section contacts">
+        <div id="map"></div>
+        <div class="contacts__send-message">
+          <form class='contacts__form'>
+            <h2 class="contacts__send-message-title">Send Message</h2>
+            <label class="contacts__input-title contacts__input-title--name">
+              Your Name
+              <input class="contacts__input-field" type="text" name="ContactsName">
+            </label>
+            <label class="contacts__input-title contacts__input-title--phone">
+              Phone
+              <input class="contacts__input-field" type="tel" name="ContactsPhone">
+            </label>
+            <textarea class="contacts__input-field contacts__input-field--message" placeholder="Message" name="userMessage"></textarea>
+            <input class="contacts__send-button blue" type="submit" value="SEND">
+          </form>
+          <ul class="contacts__info blue">
+            <li class="contacts__info__title-item"><span class="contacts__info-title">Contact Information</span></li>
+            <li class="contact-wrapper"><span class="contacts__contact contacts__contact--title">Bolshoi Sukharevsky Lane, 14 Moscow city, 623998</span>
+            <li class="contact-wrapper"><a class="contacts__contact contacts__contact--phone" href="tel:+734466413413">+7 (3466) 413-413</a>
+            <li class="contact-wrapper"><a class="contacts__contact contacts__contact--mail" href="mail:beauty@mail.ru">beauty@mail.ru</a>
+            <li class="contacts__list-socials"><a class="contacts__socials contacts__socials--whatsapp" href="https://whatsapp.com"><img src="./img/whatsapp-white.png" alt="whatsapp"></a>
+            <li class="contacts__list-socials"><a class="contacts__socials contacts__socials--twitter" href="https://twitter.com"><img src="./img/twitter-white.png" alt="twitter"></a>
+            <li class="contacts__list-socials"><a class="contacts__socials contacts__socials--fb" href="https://facebook.com"><img src="./img/fb-white.png" alt="facebook"></a>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <a class="footer__logo" href="#"></a>
+      <div class="footer__links">
+        <div class="footer__title">ABOUT</div>
+        <a href="" class="footer__link">Our history</a>
+        <a href="" class="footer__link">Salon</a>
+      </div>
+      <div class="footer__links">
+        <div class="footer__title">POrtfolio</div>
+        <a href="" class="footer__link">Arcihive</a>
+        <a href="" class="footer__link">Awards</a>
+      </div>
+      <div class="footer__links">
+        <div class="footer__title">Services</div>
+        <a href="" class="footer__link">Online</a>
+        <a href="" class="footer__link">Calendar</a>
+      </div>
+      <div class="footer__links">
+        <div class="footer__title footer__title--mb">Subscribe</div>
+        <div class="footer__subscribe">
+          <input class="footer__email-input" type='email' placeholder="Enter your email">
+          <button class="footer__subscribe-button blue"></button>
+        </div>
+      </div>
+      <div class="footer__copyright">© 2019 All righyt reserved</div>
+    </footer>
+    <form class="services_modal modal">
+        <h2 class="modal__title blue">
+          Reservation
+          <button class="modal__close-button"></button>
+        </h2>
+        <div class="modal__master-card">
+          <img src="./img/master1.png" alt ='master'>
+          <span>MASTER</span>
+        </div>
+        <div class="modal__order-time blue">18 Oct, 2019, 15:00</div>
+        <span class="modal__service-choice-text">Choose a service</span>
+        <ul class="modal__service-choice blue">
+          <li><input type="radio" name="service" value="haircut" id="haircut" checked><label for="haircut">haircut</label></li>
+          <li><input type="radio" name="service" value="coloring" id="coloring"><label for="coloring">coloring</label></li>
+          <li><input type="radio" name="service" value="Styling" id="Styling"><label for="Styling">Styling</label></li>
+          <li><input type="radio" name="service" value="restoration" id="restoration"><label for="restoration">hair restoration</label></li>
+        </ul>
+        <label class="modal__input-item modal__input-item--name">
+          Your Name
+          <input class="modal__input" type="text" name="ModalName">
+        </label>
+        <label class="modal__input-item modal__input-item--phone">
+          Phone
+          <input class="modal__input" type="tel" name="ModalPhone">
+        </label>
+        <input class="modal__reserve-button blue" type="submit" value="RESERVE"> 
+    </form>
+    <div class="overlay"></div>
+    <script src="./jquery-2.1.3.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?&lang=en_US"></script>
+    <script src="./common.js"></script>
+  </body>
+  </html> 
